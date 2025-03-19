@@ -82,6 +82,23 @@ console.log("The Average salary of 5 employee",salary)
 
 
 
+// Q-5     Reverse the Guest List:
+//         You have a list of guests for a party: ["John", "Aman", "Rita", "Raj"]. Write a function to reverse the guest list.
+//         Hint: Do not use .reverse().
+
+function reversedArr(){
+  return reversedArr
+}
+let arr = [ "John", "Aman", "Rita", "Raj"];
+let reversedArr1 = []
+
+for (let i = arr.length - 1; i >= 0; i--) {
+    
+    reversedArr1[reversedArr1.length] = arr[i];
+}
+console.log("Q -5 : output")
+console.log("Rverse guest list",reversedArr1);
+
 
 
 // Q -6   Check for Available Seats:
@@ -121,3 +138,77 @@ console.log("The seat available in theater than true otherwise false : " ,availa
 
   
   console.log("After upadeted to do List",toDoList1)
+
+
+// Q -8  Remove Duplicate Phone Numbers:
+//       A phone company wants to remove duplicate phone numbers from an array: [9876543210, 9123456789, 9876543210, 9000000000]. Write a function to remove duplicates.
+//       Hint: Use Set or a loop.
+
+
+let phone = [9876543210, 9123456789, 9876543210, 9000000000]
+
+function removeDuplicate(arr){
+  return arr
+}
+
+for(let i = 0; i < phone.length; i++){
+      for (let j=i+1;j<phone.length;j++){
+            if(phone[i]===phone[j]){
+                  phone.splice(j,1)
+                  j--
+            }
+      }
+}
+console.log("Q - 8 : output")
+console.log("After remove duplicate number from company list",phone)
+
+// Q - 9 Find Second Largest Sale Amount:
+//       A shop recorded sales amounts: [200, 400, 100, 700, 500]. Write a function to find the second-largest sale.
+//       Hint: Sort the array or find the largest, then exclude it
+
+let array2 = [200, 400, 100, 700, 500]
+let secondLargest = []
+
+array2.sort((a,b)=>b-a)
+
+secondLargest = array2[1]
+
+console.log("Q - 9 : output")
+console.log("The second largest sale amount is",secondLargest)
+
+// Q - 10    Get the Last Product Sold:
+//           A store records product sales as ["Shoes", "T-shirt", "Hat"]. Write a function to get the last product sold.
+//           Hint: Access the last array element.
+
+
+
+let product = ["Shoes", "T-shirt", "Hat"]
+let lastProduct = product.map((productLast) => 
+      {
+            productLast = product[product.length - 1]
+          return productLast})
+
+console.log("Q - 10 : output")
+
+console.log("The last product sold is",lastProduct[0])
+
+
+// Q - 11   Check if Shopping Cart is Empty:
+//          Write a function to check if the shopping cart array cart = [] is empty.
+//          Hint: Check if the length is 0.
+let shoppingCart = []
+function checkEmpty(shoppingCart){
+   
+
+      if(shoppingCart.length == 0 ){
+            console.log("Q - 12 : output")
+            console.log("The shopping cart is empty")
+      }
+      else{
+            console.log("Q - 12 : output")
+            console.log("The shopping cart is not empty")
+      }
+}
+// console.log("Q - 11 : output")
+console.log(checkEmpty(shoppingCart))
+
