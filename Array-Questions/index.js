@@ -66,17 +66,58 @@ function monthlySalary(totalSalary){
 
 let salaryOfEmployee = [45000, 55000 ,30000 ,70000, 60000]
 let totalSalary = 0
-let averageSalary = 0 
+
+
 
 let monthlySalary1 = salaryOfEmployee.map((num)=>{
       totalSalary += num
 })
 console.log("Q - 4  : Output")
-console.log("the total Salary of 5 employee = ",totalSalary) 
+ 
+
+let i = salaryOfEmployee.length 
+
+let salary = totalSalary / i
+console.log("The Average salary of 5 employee",salary)
 
 
 
-for(let i=0;i<salaryOfEmployee.length;i++){
-  averageSalary = totalSalary / salaryOfEmployee[i]
+
+
+// Q -6   Check for Available Seats:
+//        A movie theater has an array of available seat numbers: [3, 5, 7, 9, 12]. Write a function to check if seat number 7 is available.
+//        Hint: Use .includes() or a loop
+function seatAvailable(available){
+  return available
 }
-console.log("The Average salary of 5 employee",averageSalary)
+
+let seatNo = [3,5,7,9,12]
+
+let seat = 14
+
+
+
+let available = seatNo.includes(seat)
+   
+
+console.log("Q - 6  : output")
+console.log("The seat available in theater than true otherwise false : " ,available)
+
+
+// Q -7 Remove the First Task:
+//      You have a to-do list: ["Buy groceries", "Clean room", "Study"]. Write a function to remove the first task from the list and return the updated list.
+//      Hint: Use .shift().
+
+
+  function toDoList(remove){
+   return remove
+  }
+
+  let toDoList1 = ["Buy groceries" , "Clean room", "Study"]
+  let removeList = "Buy groceries"
+  console.log("Q - 7 : output")
+  console.log("Before update",toDoList1)
+  let remove = toDoList1.shift(removeList)
+
+  
+  console.log("After upadeted to do List",toDoList1)
