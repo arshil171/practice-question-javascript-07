@@ -319,3 +319,64 @@ for (let i = 0; i < scores.length; i++) {
 console.log("Q -16 : output")
 
 console.log("The sorted scores in descending order = ", scores1)
+
+
+
+// Q - 17 Split Attendees into Groups:
+//        An event has 10 attendees: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]. Write a function to split them into groups of 3.
+//        Hint: Loop and use slice().
+
+
+
+let attendees = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+
+let groups = attendees.slice(0,2)
+let groupe1 = attendees.slice(2,6)
+let groupe2 = attendees.slice(6,10)
+
+
+console.log("Q - 17 : output")
+console.log("the first group is : ",groups)
+console.log("the second group is :",groupe1)
+console.log("the third group is :",groupe2)
+
+
+
+// Q - 18 Rotate the Line of Cars:
+//        A parking lot has cars in a line: ["Car1", "Car2", "Car3", "Car4"]. Write a function to rotate the cars so "Car4" comes to the front.
+//        Hint: Use .pop() and .unshift().
+
+let cars = ["Car1", "Car2", "Car3", "Car4"]
+
+let lastCar = cars.pop()
+
+
+cars.unshift("Car4")
+console.log("Q -18 : output")
+
+console.log("the new line of cars is : ", cars)
+
+
+// Q - 19  Remove Unwanted Values from the List:
+//         A form received some invalid values: [0, "A", "", null, "B", undefined]. Write a function to remove all falsey values (like 0, null, undefined) from the list.
+//        Hint: Use .filter().
+
+
+let formValues = [0, "A", "", null, "B", undefined]
+let values = [0,null,undefined]
+// method -- 1
+// let validValues = formValues.filter((value) => Boolean(value))
+
+// method -- 2
+let newValue = formValues.filter((value)=>{
+      for(let i=0;i<formValues.length;i++){
+            if(formValues[i]==values[0]){
+                  return value
+            }
+      }
+})
+
+console.log("Q - 19 : output")
+
+// console.log("the valid values from the form are : ", validValues)
+console.log("the valid values from the form are : ",newValue)
