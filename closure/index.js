@@ -93,7 +93,15 @@ for (let i = arr.length - 1; i >= 0; i--) {
 }
 
 console.log(reversedArr);
+// Q -8    String to Uppercase
+//         Given a string `let greeting = "hello";`, use a `for` loop to convert each character to uppercase and print the result.
 
+
+let greeting = "hello";
+
+for (let i = 0; i < greeting.length; i++) {
+    console.log(greeting[i].toUpperCase());
+}
 
 // Q - 9    Counting Elements
 //         Write a while loop to count the number of elements in the array [2, 4, 6, 8, 10] and print the count
@@ -204,12 +212,15 @@ console.log("lenghth of the array elements: ", i2)
  
  let countVowels = "Hello, World!"
  let countVowelString = 0
+ let countVowelString1 = 0
  
- for (let i=0;i<countVowels;i++){
-     if(countVowels == "a" || countVowels == "e" || countVowels == "i" || countVowels == "o" || countVowels == "u" || countVowels == "A" || countVowels == "E" || countVowels === "I" || countVowels == "O" || countVowels == "U")
+ for (let i=0;i<countVowels.length;i++){
+     if(countVowels[i].length == "a" && countVowels == "e" && countVowels == "i" && countVowels == "o" && countVowels == "u" && countVowels == "A" && countVowels == "E" && countVowels === "I" && countVowels == "O" && countVowels == "U")
      {
+         countVowelString1++
          countVowelString += countVowels[i]
      }
+    // countVowelString1++
  }
- 
+ console.log(countVowelString1)
  console.log("The Number of Vowel in String" , countVowelString)
