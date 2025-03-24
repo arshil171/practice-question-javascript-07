@@ -2,6 +2,7 @@
 //        Write a for loop to iterate over an array of numbers [1, 2, 3, 4, 5] and print each number to the console
 
 let array = [1, 2, 3, 4, 5]
+console.log("Q - 1 : output")
 for (let i = 0; i < array.length; i++) {
     console.log(array[i])
 }
@@ -14,6 +15,7 @@ for (let i = 0; i < array.length; i++) {
 
 let i = 0;
 let arrayWhile = [10, 20, 30, 40, 50]
+console.log("Q - 2 : output")
 
 while (i < arrayWhile.length) {
     console.log(arrayWhile[i])
@@ -32,7 +34,7 @@ let count = 0
 for (let i = 0; i < str.length; i++) {
     count++
 }
-
+console.log("Q - 3 : output")
 console.log("Length of the string using Count :", count)
 console.log("Length of the string: ", str.length)
 
@@ -41,7 +43,7 @@ console.log("Length of the string: ", str.length)
 //        Use a for loop to print each character of the string "JavaScript" one by one
 
 let strChar = "JavaScript"
-
+console.log("Q - 4 : output")
 for (let i = 0; i < strChar.length; i++) {
     console.log(strChar[i])
 }
@@ -56,7 +58,7 @@ let sum = 0
 for (let i = 0; i < arraySum.length; i++) {
     sum += arraySum[i]
 }
-
+console.log("Q - 5 : output")
 console.log("Sum of the array elements: ", sum)
 
 
@@ -74,7 +76,7 @@ for (let i = 1; i < arrayMax.length; i++) {
         max = arrayMax[i]
     }
 }
-
+console.log("Q - 6 : output")
 console.log("Maximum value in the array: ", max)
 
 
@@ -91,13 +93,14 @@ for (let i = arr.length - 1; i >= 0; i--) {
     
     reversedArr[reversedArr.length] = arr[i];
 }
-
-console.log(reversedArr);
+console.log("Q - 7 : output")
+console.log("The reversed array :-",reversedArr);
 // Q -8    String to Uppercase
 //         Given a string `let greeting = "hello";`, use a `for` loop to convert each character to uppercase and print the result.
 
 
 let greeting = "hello";
+console.log("Q - 8 : output")
 
 for (let i = 0; i < greeting.length; i++) {
     console.log(greeting[i].toUpperCase());
@@ -119,7 +122,7 @@ while (i1 < arrayCount.length) {
     count1++
     i1++
 }
-
+console.log("Q - 9 : output")
 console.log("Count of the array elements: ", count1)
 
 
@@ -131,7 +134,8 @@ console.log("Count of the array elements: ", count1)
 
 let evenCount = [1, 2, 3, 4, 5, 6]
 
-
+console.log("Q - 10 : output")
+console.log("The even number in array is :-")
 for (let i=0 ; i< evenCount.length;i++)
 {
     if(evenCount[i] % 2 === 0)
@@ -149,12 +153,12 @@ let arraylength = [5,10,15]
 
 let i2 = 0
 
-while (i1 < arrayCount.length) {
+while (i2 < arraylength.length) {
 
     
     i2++
 }
-
+console.log("Q - 11 : output")
 console.log("lenghth of the array elements: ", i2)
 
 
@@ -173,6 +177,7 @@ console.log("lenghth of the array elements: ", i2)
  {
      sumTotal += sumString[i].length
  }
+ console.log("Q - 12 : output")
  console.log("Total length of all String ",sumTotal)
  
  
@@ -189,7 +194,7 @@ console.log("lenghth of the array elements: ", i2)
  for (let i=0;i<stringConcate.length;i++){
      concatenatedString += stringConcate[i]
  }
- 
+ console.log("Q - 13 : output")
  console.log("concateneted string :" , concatenatedString)
  
  
@@ -198,6 +203,7 @@ console.log("lenghth of the array elements: ", i2)
  
  
  let stringIndex  = "JavaScript"
+ console.log("Q - 14 : output")
  
  for (let i=0;i<stringIndex.length;i++){
      if(stringIndex[i] === "a"){
@@ -211,16 +217,14 @@ console.log("lenghth of the array elements: ", i2)
  
  
  let countVowels = "Hello, World!"
- let countVowelString = 0
+ let countVowelString = "aeiouAEIOU"
  let countVowelString1 = 0
  
  for (let i=0;i<countVowels.length;i++){
-     if(countVowels[i].length == "a" && countVowels == "e" && countVowels == "i" && countVowels == "o" && countVowels == "u" && countVowels == "A" && countVowels == "E" && countVowels === "I" && countVowels == "O" && countVowels == "U")
-     {
-         countVowelString1++
-         countVowelString += countVowels[i]
-     }
-    // countVowelString1++
+
+        if(countVowelString.indexOf(countVowels[i]) !== -1){
+            countVowelString1++
+        }
  }
- console.log(countVowelString1)
- console.log("The Number of Vowel in String" , countVowelString)
+ console.log("Q - 15 : output")
+ console.log("The Number of Vowel in String :-" , countVowelString1)
