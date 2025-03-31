@@ -33,8 +33,8 @@ for(let i=1;i<=num;i++){
   
 let n = 5
 console.log("Pattern No :-2")
-
-for(let i=1;i<=n;i++)
+   
+for(let i=1;i<=n;i++)   
 {
     let string2 = ""
     for(let j=1;j<=n;j++ )
